@@ -1,3 +1,4 @@
+import 'package:basic/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'NavBar.dart';
@@ -11,13 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/Welcome', // Set the initial route
-      routes: {
-        '/Welcome': (context) =>
-            WelcomeScreen(), // Welcome screen as the initial route
-        '/Login': (context) => LoginPage(), // Define your login page
-        '/Signup': (context) => SignupScreen(), // Define your signup page
-      },
+      // initialRoute: '/Welcome', // Set the initial route
+      // routes: {
+      //   '/Welcome': (context) =>
+      //       WelcomeScreen(), // Welcome screen as the initial route
+      //   '/Login': (context) => LoginPage(), // Define your login page
+      //   '/Signup': (context) => SignupScreen(), // Define your signup page
+      // },
     );
   }
 }
@@ -30,16 +31,16 @@ class SidebarApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/Welcome', // Set the initial route
-      routes: {
-        '/Welcome': (context) =>
-            WelcomeScreen(), // Welcome screen as the initial route
-        '/Login': (context) => LoginPage(), // Define your login page
-        '/Signup': (context) => SignupScreen(), // Define your signup page
-      },
+      // initialRoute: '/Welcome', // Set the initial route
+      // routes: {
+      //   '/Welcome': (context) =>
+      //       WelcomeScreen(), // Welcome screen as the initial route
+      //   '/Login': (context) => LoginPage(), // Define your login page
+      //   '/Signup': (context) => SignupScreen(), // Define your signup page
+      // },
       debugShowCheckedModeBanner: false,
       home:
-        NavBar(),
+        onBoarding(),
 
 
     );

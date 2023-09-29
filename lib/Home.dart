@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
             top: 45.0,
             left: screenWidth * 0.29,
             child: Text(
-              "ELDEN RING",
+              "Template",
               style: TextStyle(
                 color: Colors.redAccent,
                 fontSize: screenWidth * 0.10,
